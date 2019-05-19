@@ -1,5 +1,3 @@
-//Create a C++ program to show the smallest and largest integer, the total, and the average of an array that take 10 elements only
-
 #include <iostream>
 #include <conio.h>
 #include <iomanip>
