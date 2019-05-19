@@ -1,0 +1,38 @@
+#include <iostream>
+#include <conio.h>
+#include <cstring>
+
+using namespace std;
+int main()
+{
+	int i,j;
+	char arr[50], temp;
+
+	cout << "Enter char array: ";
+	cin >> arr;
+	
+	cout << "Reverse of char array: ";
+		
+	int size = strlen(arr);
+	for (i = 0; i < size; i++)
+	{
+		for (j = i + 1; j < size; j++)
+		{
+			if (arr[i] > arr[j])             
+			{
+				temp = arr[i];                
+				arr[i] = arr[j];
+				arr[j] = temp;
+			}
+		}
+	 }
+
+	for(i = 0; i < size; i++)
+	{
+		cout << arr[i];
+	}
+	cout << "\nChar array length is: " << strlen(arr) + 1;
+
+_getch();
+return 0;
+}
